@@ -1,0 +1,48 @@
+ nav{ 
+       background-color:black;
+          color:white;
+          padding:10px;
+      border-style:ridge;
+    
+}
+
+.one{
+text-align: center;
+display:block ;
+width: 100;
+padding: 10px;
+font-size: 25px;
+
+}
+
+body{ 
+    background-color: rgb(104, 128, 236);
+    
+}
+
+.summary{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    padding: 40px;
+    font-size: 20px;
+}
+ 
+
+.income{
+ color: #00ff00;   
+}
+
+.expense{
+    color: red;
+}
+
+.four{
+    background-color: rgb(25, 0, 255);
+    color: aliceblue;
+    display: block;
+    width: 50%;
+    margin-top: 25px;
+    
+    }
