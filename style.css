@@ -6,13 +6,19 @@
     
 }
 
-.one{
-text-align: center;
+form input{
+    text-align: center;
 display:block ;
-width: 100;
 padding: 10px;
 font-size: 25px;
 
+}
+
+form button{
+   text-align: center;
+display:block ;
+padding: 10px;
+font-size: 10px;
 }
 
 body{ 
@@ -31,11 +37,13 @@ body{
  
 
 .income{
- color: #00ff00;   
+ color: #0b610b;
+ font-weight: bold;   
 }
 
 .expense{
     color: red;
+    font-weight: bold;
 }
 
 .four{
@@ -46,3 +54,47 @@ body{
     margin-top: 25px;
     
     }
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #140a0a;
+  color: white;
+  padding: 10px;
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  border-right: 5px solid;
+}
+
+li.plus {
+  border-color: rgb(29, 189, 29);
+}
+
+li.minus {
+  border-color: red;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 3px 7px;
+  cursor: pointer;}
+
+
+
+h1{
+  color: rgb(214, 108, 9);
+}
+
+.container {
+  width: 350px;
+  background: #b8b5b5;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px lab(50.8% -21.06 53.57 / 0.1);
+}

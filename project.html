@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head> 
+  <meta charset="UTF-8">
     <title> Expense Tracker </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
+    <div class="container">
    <nav>
    <center><h1> Expense Tracker 💰</h1></center>
     </nav>
     </div>
 
 
-    <div class="summary">
+   <center> <div class="container">
       <div class="income">
         <h4>Income</h4>
-        <p id="income">+$0.00</p>
+        <p id="income">+$ 0.00</p>
       </div>
       <div class="expense">
         <h4>Expense</h4>
-        <p id="expense">-$0.00</p>
+        <p id="expense">-$ 0.00</p>
       </div>
-    </div>
+    
 
    <center> <h3>History</h3> </center>
+   <ul id="list"></ul>
     
 
    <center><div class="balance"><br>
@@ -33,42 +35,21 @@
 </center>
 
     <br>
-    </body><br>
-<form class="one">
+    <br>
+<form id="form">
  
-  Description <input type="text" id="description" placeholder=" Enter Description" required />
+  Description <input type="text" id="text" placeholder=" Enter Description" required />
  
-   Amount <input type="number" id="amount" placeholder="Enter Amount" required />
+   Amount <input type="number" id="amount" placeholder="Enter Amount (+/-)" required />
 <center> <button class="four" type="submit">Add transactions</button></center>
 </form>
+    </div></center>
 
-<ul class="two"></ul>
 
-<script>
-  const form = document.getElementById("transactionForm");
-  const list = document.getElementById("transactions");
 
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
 
-    const desc = document.getElementById("description").value;
-    const amount = parseFloat(document.getElementById("amount").value);
 
-    if (!desc || isNaN(amount)) {
-      alert("Please enter valid data");
-      return;
-    }
-
-    const type = amount >= 0 ? "Income" : "Expense";
-
-    const li = document.createElement("li");
-    li.textContent = `${desc}: ${amount} (${type})`;
-
-    list.appendChild(li);
-
-    form.reset();
-  });
-</script>
+<script src="pro.js"></script>
 
 
     
