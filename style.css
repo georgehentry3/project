@@ -21,19 +21,15 @@ padding: 10px;
 font-size: 10px;
 }
 
+
+
+
 body{ 
     background-color: rgb(104, 128, 236);
     
 }
 
-.summary{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 80px;
-    text-transform: uppercase;
-    padding: 40px;
-    font-size: 20px;
-}
+
  
 
 .income{
@@ -46,14 +42,24 @@ body{
     font-weight: bold;
 }
 
-.four{
+.button{
     background-color: rgb(25, 0, 255);
     color: aliceblue;
     display: block;
     width: 50%;
     margin-top: 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  
     
     }
+
+   button:hover{ 
+    transform: scale(1.05);
+  opacity: 1; 
+   }
+
 ul {
   list-style: none;
   padding: 0;
